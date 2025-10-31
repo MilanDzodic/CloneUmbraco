@@ -1,0 +1,220 @@
+{
+  "name": "Onatrix Rte",
+  "alias": "Onatrix.Rte",
+  "extensions": [
+    {
+      "type": "tiptapToolbarExtension",
+      "kind": "styleMenu",
+      "alias": "Onatrix.Tiptap.StyleMenu",
+      "name": "Onatrix Style Menu",
+      "meta": {
+        "alias": "OnatrixStyleMenu",
+        "icon": "icon-palette",
+        "label": "Onatrix styles"
+      },
+      "items": [
+        {
+          "label": "Paragraphs",
+          "items": [
+            {
+              "label": "XL - 70",
+              "items": [
+                {
+                  "label": "Light",
+                  "data": {
+                    "tag": "p",
+                    "class": "text-rte-xl front-light"
+                  },
+                  "appearance": {}
+                },
+                {
+                  "label": "Normal",
+                  "data": {
+                    "tag": "p",
+                    "class": "text-rte-xl font-regular"
+                  },
+                  "appearence": {}
+                },
+                {
+                  "label": "Bold",
+                  "data": {
+                    "tag": "p",
+                    "class": "text-rte-xl font-bold"
+                  },
+                  "appearence": {}
+                }
+              ]
+            },
+            {
+              "label": "L - 40",
+              "items": [
+                {
+                  "label": "Light",
+                  "data": {
+                    "tag": "p",
+                    "class": "text-rte-lg front-light"
+                  },
+                  "appearance": {}
+                },
+                {
+                  "label": "Normal",
+                  "data": {
+                    "tag": "p",
+                    "class": "text-rte-lg font-regular"
+                  },
+                  "appearence": {}
+                },
+                {
+                  "label": "Bold",
+                  "data": {
+                    "tag": "p",
+                    "class": "text-rte-lg font-bold"
+                  },
+                  "appearence": {}
+                }
+              ]
+            },
+            {
+              "label": "M - 20",
+              "items": [
+                {
+                  "label": "Light",
+                  "data": {
+                    "tag": "p",
+                    "class": "text-rte-md front-light"
+                  },
+                  "appearance": {}
+                },
+                {
+                  "label": "Normal",
+                  "data": {
+                    "tag": "p",
+                    "class": "text-rte-md font-regular"
+                  },
+                  "appearence": {}
+                },
+                {
+                  "label": "Bold",
+                  "data": {
+                    "tag": "p",
+                    "class": "text-rte-md font-bold"
+                  },
+                  "appearence": {}
+                }
+              ]
+            },
+            {
+              "label": "S - 16",
+              "items": [
+                {
+                  "label": "Light",
+                  "data": {
+                    "tag": "p",
+                    "class": "text-rte-sm front-light"
+                  },
+                  "appearance": {}
+                },
+                {
+                  "label": "Normal",
+                  "data": {
+                    "tag": "p",
+                    "class": "text-rte-sm font-regular"
+                  },
+                  "appearence": {}
+                },
+                {
+                  "label": "Bold",
+                  "data": {
+                    "tag": "p",
+                    "class": "text-rte-sm font-bold"
+                  },
+                  "appearence": {}
+                }
+              ]
+            },
+            {
+              "label": "XS - 14",
+              "items": [
+                {
+                  "label": "Light",
+                  "data": {
+                    "tag": "p",
+                    "class": "text-rte-xs front-light"
+                  },
+                  "appearance": {}
+                },
+                {
+                  "label": "Normal",
+                  "data": {
+                    "tag": "p",
+                    "class": "text-rte-xs font-regular"
+                  },
+                  "appearence": {}
+                },
+                {
+                  "label": "Bold",
+                  "data": {
+                    "tag": "p",
+                    "class": "text-rte-xs font-bold"
+                  },
+                  "appearence": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Bullets",
+          "data": {
+            "tag": "ul",
+            "class": "rte-ul"
+          }
+        }
+      ]
+    },
+    {
+      "type": "tiptapToolbarExtension",
+      "kind": "styleMenu",
+      "alias": "Onatrix.Tiptap.BrandColors",
+      "name": "Onatrix Brand Colors",
+      "meta": {
+        "alias": "OnatrixBrandColors",
+        "label": "Onatrix Color"
+      },
+      "items": [
+        {
+          "label": "Primary",
+          "data": {
+            "tag": "span",
+            "class": "text-primary"
+          },
+          "appearence": { "style": "background-color:#4F5955; color:#fff; padding:5px;" }
+        },
+        {
+          "label": "Secondary",
+          "data": {
+            "tag": "span",
+            "class": "text-secondary"
+          },
+          "appearance": { "style": "background-color: #D9C3A9; color: #fff; padding:5px;" }
+        },
+        {
+          "label": "Body",
+          "data": {
+            "tag": "span",
+            "class": "text-body-text"
+          },
+          "appearance": { "style": "background-color:#535656; color:#fff; padding:5px;" }
+        },
+        {
+          "label": "Body-Light",
+          "data": {
+            "tag": "span",
+            "class": "text-body-text-100"
+        },
+        "appearance": { "style": "background-color:#999999; color:#fff; padding:5px;" }
+        }
+      ]
+    }
+  ]
+}
