@@ -10,7 +10,7 @@
       "meta": {
         "alias": "OnatrixStyleMenu",
         "icon": "icon-palette",
-        "label": "Onatrix styles"
+        "label": "Onatrix Styles"
       },
       "items": [
         {
@@ -23,25 +23,22 @@
                   "label": "Light",
                   "data": {
                     "tag": "p",
-                    "class": "text-rte-xl front-light"
-                  },
-                  "appearance": {}
+                    "class": "text-rte-xl font-light"
+                  }
                 },
                 {
                   "label": "Normal",
                   "data": {
                     "tag": "p",
                     "class": "text-rte-xl font-regular"
-                  },
-                  "appearence": {}
+                  }
                 },
                 {
                   "label": "Bold",
                   "data": {
                     "tag": "p",
                     "class": "text-rte-xl font-bold"
-                  },
-                  "appearence": {}
+                  }
                 }
               ]
             },
@@ -52,25 +49,22 @@
                   "label": "Light",
                   "data": {
                     "tag": "p",
-                    "class": "text-rte-lg front-light"
-                  },
-                  "appearance": {}
+                    "class": "text-rte-lg font-light"
+                  }
                 },
                 {
                   "label": "Normal",
                   "data": {
                     "tag": "p",
                     "class": "text-rte-lg font-regular"
-                  },
-                  "appearence": {}
+                  }
                 },
                 {
                   "label": "Bold",
                   "data": {
                     "tag": "p",
                     "class": "text-rte-lg font-bold"
-                  },
-                  "appearence": {}
+                  }
                 }
               ]
             },
@@ -81,25 +75,22 @@
                   "label": "Light",
                   "data": {
                     "tag": "p",
-                    "class": "text-rte-md front-light"
-                  },
-                  "appearance": {}
+                    "class": "text-rte-md font-light"
+                  }
                 },
                 {
                   "label": "Normal",
                   "data": {
                     "tag": "p",
                     "class": "text-rte-md font-regular"
-                  },
-                  "appearence": {}
+                  }
                 },
                 {
                   "label": "Bold",
                   "data": {
                     "tag": "p",
                     "class": "text-rte-md font-bold"
-                  },
-                  "appearence": {}
+                  }
                 }
               ]
             },
@@ -110,25 +101,22 @@
                   "label": "Light",
                   "data": {
                     "tag": "p",
-                    "class": "text-rte-sm front-light"
-                  },
-                  "appearance": {}
+                    "class": "text-rte-sm font-light"
+                  }
                 },
                 {
                   "label": "Normal",
                   "data": {
                     "tag": "p",
                     "class": "text-rte-sm font-regular"
-                  },
-                  "appearence": {}
+                  }
                 },
                 {
                   "label": "Bold",
                   "data": {
                     "tag": "p",
                     "class": "text-rte-sm font-bold"
-                  },
-                  "appearence": {}
+                  }
                 }
               ]
             },
@@ -139,25 +127,105 @@
                   "label": "Light",
                   "data": {
                     "tag": "p",
-                    "class": "text-rte-xs front-light"
-                  },
-                  "appearance": {}
+                    "class": "text-rte-xs font-light"
+                  }
                 },
                 {
                   "label": "Normal",
                   "data": {
                     "tag": "p",
                     "class": "text-rte-xs font-regular"
-                  },
-                  "appearence": {}
+                  }
                 },
                 {
                   "label": "Bold",
                   "data": {
                     "tag": "p",
                     "class": "text-rte-xs font-bold"
-                  },
-                  "appearence": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Headings",
+          "items": [
+            {
+              "label": "H1",
+              "items": [
+                {
+                  "label": "Light",
+                  "data": {
+                    "tag": "h1",
+                    "class": "font-light"
+                  }
+                },
+                {
+                  "label": "Normal",
+                  "data": {
+                    "tag": "h1",
+                    "class": "font-regular"
+                  }
+                },
+                {
+                  "label": "Bold",
+                  "data": {
+                    "tag": "h1",
+                    "class": "font-bold"
+                  }
+                }
+              ]
+            },
+            {
+              "label": "H2",
+              "items": [
+                {
+                  "label": "Light",
+                  "data": {
+                    "tag": "h2",
+                    "class": "font-light"
+                  }
+                },
+                {
+                  "label": "Normal",
+                  "data": {
+                    "tag": "h2",
+                    "class": "font-regular"
+                  }
+                },
+                {
+                  "label": "Bold",
+                  "data": {
+                    "tag": "h2",
+                    "class": "font-bold"
+                  }
+                }
+              ]
+            },
+            {
+              "label": "H3",
+              "items": [
+                {
+                  "label": "Light",
+                  "data": {
+                    "tag": "h3",
+                    "class": "font-light"
+                  }
+                },
+                {
+                  "label": "Normal",
+                  "data": {
+                    "tag": "h3",
+                    "class": "font-regular"
+                  }
+                },
+                {
+                  "label": "Bold",
+                  "data": {
+                    "tag": "h3",
+                    "class": "font-bold"
+                  }
                 }
               ]
             }
@@ -169,6 +237,25 @@
             "tag": "ul",
             "class": "rte-ul"
           }
+        },
+        {
+          "label": "Images",
+          "items": [
+            {
+              "label": "Full Width",
+              "data": {
+                "tag": "img",
+                "class": "img"
+              }
+            },
+            {
+              "label": "Original",
+              "data": {
+                "tag": "img",
+                "class": "img-orig"
+              }
+            }
+          ]
         }
       ]
     },
@@ -179,7 +266,7 @@
       "name": "Onatrix Brand Colors",
       "meta": {
         "alias": "OnatrixBrandColors",
-        "label": "Onatrix Color"
+        "label": "Onatrix Colors"
       },
       "items": [
         {
@@ -211,8 +298,8 @@
           "data": {
             "tag": "span",
             "class": "text-body-text-100"
-        },
-        "appearance": { "style": "background-color:#999999; color:#fff; padding:5px;" }
+          },
+          "appearance": { "style": "background-color:#999999; color:#fff; padding:5px;" }
         }
       ]
     }

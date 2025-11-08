@@ -1,0 +1,28 @@
+﻿.custom-pagination {
+  @apply hidden md:flex md:justify-center md:gap-4 md:py-2 md:mt-6;
+}
+
+.custom-next,
+.custom-prev {
+  @apply text-lg font-semibold flex items-center text-gray-400 cursor-pointer;
+}
+
+.swiper-button-disabled {
+  @apply text-border-400 cursor-default;
+}
+
+.swiper-pagination {
+  @apply flex justify-center items-center gap-2 relative !w-auto !bottom-0;
+}
+
+.swiper-pagination-bullet {
+  @apply text-lg font-semibold flex justify-center items-center p-6 bg-neutral rounded-full cursor-pointer text-primary;
+}
+
+.swiper-pagination-bullet:hover {
+  @apply outline-1 outline-border-400 opacity-100;
+}
+
+.swiper-pagination-bullet-active {
+  @apply outline-1 outline-border-400 text-primary;
+}
