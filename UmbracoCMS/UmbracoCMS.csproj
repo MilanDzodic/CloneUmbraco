@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Umbraco.Cms" Version="16.3.1" />
+    <PackageReference Include="Umbraco.Cms" Version="16.3.4" />
   </ItemGroup>
 
   <ItemGroup>

@@ -12,20 +12,32 @@
   var contentEmail = siteSettings?.ContactEmail ?? "Ingen email-adress angiven";
 }
 
-<section class="relative py-[15rem]">
+<section class="bg-gray-100 pt-[5rem]">
 
-  <div class="absolute right-0 inset-0">
-    @if (content.TopImage != null)
-    {
-      <img src="@content.TopImage.Url()" class="object-cover" />
-    }
-  </div>
- 
-  <div class="inset-0">
-    @if (content.BotImage != null)
-    {
-      <img src="@content.BotImage.Url()" class="object-cover" />
-    }
+  <div class="flex max-w-7xl mx-auto px-4">
+    <div class="inset-0">
+      @if (content.Image != null)
+      {
+        <img src="@content.Image.Url()" class="object-cover" />
+      }
+    </div>
+
+    <div class="pt-10 ml-20 flex flex-col gap-4">
+      <p class="">@content.Text</p>
+      
+      <div>
+        <p class="text-primary text-rte-md font-bold">Office location</p>
+        <p>@contentAddress</p>
+      </div>
+      <div>
+        <p class="text-primary text-rte-md font-bold">Phone number</p>
+        <p class="italic">@contentPhone</p>
+      </div>
+      <div>
+        <p class="text-primary text-rte-md font-bold">E-mail address</p>
+        <p class="italic">@contentEmail</p>
+      </div>
+    </div>
   </div>
 
 </section>
