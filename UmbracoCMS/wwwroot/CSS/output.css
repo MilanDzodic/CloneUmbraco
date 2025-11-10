@@ -17,6 +17,7 @@
     --color-gray-400: #485264;
     --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-gray-600: oklch(44.6% 0.03 256.802);
+    --color-black: #0E0E0E;
     --color-white: #F2EDDC;
     --spacing: 0.25rem;
     --container-7xl: 80rem;
@@ -280,9 +281,6 @@
   .\!-mr-8 {
     margin-right: calc(var(--spacing) * -8) !important;
   }
-  .\!-mr-16 {
-    margin-right: calc(var(--spacing) * -16) !important;
-  }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
@@ -291,9 +289,6 @@
   }
   .\!-ml-8 {
     margin-left: calc(var(--spacing) * -8) !important;
-  }
-  .\!-ml-16 {
-    margin-left: calc(var(--spacing) * -16) !important;
   }
   .ml-1 {
     margin-left: calc(var(--spacing) * 1);
@@ -475,6 +470,9 @@
   .bg-\[\@sectionColor\] {
     background-color: @sectionColor;
   }
+  .bg-black {
+    background-color: var(--color-black);
+  }
   .bg-border-gray {
     background-color: var(--color-border-gray);
   }
@@ -525,6 +523,9 @@
   }
   .px-\[2rem\] {
     padding-inline: 2rem;
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
@@ -636,6 +637,9 @@
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
+  }
+  .whitespace-normal {
+    white-space: normal;
   }
   .text-accent {
     color: var(--color-accent);

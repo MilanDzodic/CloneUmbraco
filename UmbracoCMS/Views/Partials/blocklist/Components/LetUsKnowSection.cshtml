@@ -1,0 +1,31 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockListItem>;
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+
+@{
+  var content = (ContentModels.LetUsKnowSection)Model.Content;
+
+  var rootContent = Umbraco.ContentAtRoot();
+  var siteSettings = rootContent.OfType<SiteSettings>().FirstOrDefault();
+
+  var contentAddress = siteSettings?.ContactAddress ?? "Ingen adress angiven";
+  var contentPhone = siteSettings?.ContactPhone ?? "Inget telefonnummer angivet";
+  var contentEmail = siteSettings?.ContactEmail ?? "Ingen email-adress angiven";
+}
+
+<section class="relative py-[15rem]">
+
+  <div class="absolute right-0 inset-0">
+    @if (content.TopImage != null)
+    {
+      <img src="@content.TopImage.Url()" class="object-cover" />
+    }
+  </div>
+ 
+  <div class="inset-0">
+    @if (content.BotImage != null)
+    {
+      <img src="@content.BotImage.Url()" class="object-cover" />
+    }
+  </div>
+
+</section>
