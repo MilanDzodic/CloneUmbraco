@@ -1,0 +1,21 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockListItem>;
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+
+@{
+  var content = (ContentModels.ContactUsImage)Model.Content;
+}
+
+<section class="pb-[5rem]">
+  <div class="mx-auto px-4 flex justify-center">
+    @if (content.Image != null)
+    {
+      <img src="@content.Image.Url()" class="object-none" />
+    }
+  </div>
+  <div class="max-w-7xl mx-auto px-4">
+    @if (content.Image2 != null)
+    {
+      <img src="@content.Image2.Url()" class="object-none" />
+    }
+  </div>
+</section>

@@ -2,21 +2,20 @@
 @using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
 
 @{
-  var content = (ContentModels.AboutUsTina)Model.Content;
+  var content = (ContentModels.AboutUsTrusted)Model.Content;
 }
 
-<section class="py-[5rem]">
+<section class="bg-gray-100 py-[5rem]">
   <div class="max-w-7xl mx-auto px-4">
     <div class="flex gap-16">
-      <div class="flex flex-col gap-4">
+      <div class="rte">
+        @content.Text
+      </div>
+      <div>
         @if (content.Image != null)
         {
-          <img src="@content.Image.Url()" class="max-w-md object-cover" />
+          <img src="@content.Image.Url()" class="min-w-3xl object-cover" />
         }
-       @content.Signature
-      </div>
-      <div class="rte text-primary">
-        @content.Text
       </div>
     </div>
   </div>

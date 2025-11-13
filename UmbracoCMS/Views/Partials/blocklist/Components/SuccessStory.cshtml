@@ -1,0 +1,54 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockListItem>;
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+  var content = (ContentModels.SuccessStory)Model.Content;
+}
+
+<section class="bg-main relative pt-[2rem] flex items-center">
+  <div class="flex flex-col items-center max-w-7xl mx-auto px-4">
+    <div class="absolute -mb-[4rem]">
+      @if (content.ImageDotMap != null)
+      {
+        <img src="@content.ImageDotMap.Url()" class="min-w-3xl object-cover" />
+      }
+    </div>
+    
+    <div class="flex flex-col items-center relative gap-16 max-w-3xl">
+     
+      <div class="rte">
+        @content.TopText
+      </div>
+
+      <div class="flex gap-16 justify-between">
+        <div class="rte">
+          @content.Text1
+        </div>
+
+        <div class="rte">
+          @content.Text2
+        </div>
+
+        <div class="rte">
+          @content.Text3
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mt-[4rem] relative">
+      @if (content.ImageSuccessPeople != null)
+      {
+        <img src="@content.ImageSuccessPeople.Url()" class="min-w-3xl object-cover" />
+      }
+    </div>
+  </div>
+</section>
+
+<section class="py-[3rem]">
+  <div class="my-[4rem] items-center max-w-7xl mx-auto px-4">
+    @if (content.ImageSuccessPartners != null)
+    {
+      <img src="@content.ImageSuccessPartners.Url()" class="min-w-3xl object-cover" />
+    }
+  </div>
+</section>

@@ -19,6 +19,7 @@
   --color-notel: #9C9EA6;
   --color-border-gray: #EAEAEA;
   --color-border-400: #C7C8C9;
+  --color-bg-main: #4F5955;
 
   --font-segoe: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
@@ -67,4 +68,8 @@ body {
 
 .img-orig {
   @apply w-full h-auto object-none;
+}
+
+.bg-main {
+  @apply bg-[#4F5955];
 }

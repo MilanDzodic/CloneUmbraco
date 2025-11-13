@@ -1,0 +1,35 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockListItem>;
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+
+@{
+  var content = (ContentModels.WeAreTrust)Model.Content;
+}
+
+<section class="relative pt-[2rem] flex items-center max-w-7xl mx-auto px-4">
+  <div class="absolute -mb-[4rem]">
+      @if (content.ImageDotMap != null)
+      {
+        <img src="@content.ImageDotMap.Url()" class="min-w-3xl object-cover" />
+      }
+    </div>
+  <div class="flex flex-col items-center relative gap-16">
+    
+    <div class="rte">
+      @content.Text
+    </div>
+
+    <div>
+      @if (content.Link != null)
+      {
+        <a class="bg-primary text-white py-3 px-10 no-underline rounded cursor-pointer self-start font-bold" href="@content.Link.Url">@content.Link.Name</a>
+      }
+    </div>
+
+    <div class="mt-[4rem]">
+      @if (content.Image != null)
+      {
+        <img src="@content.Image.Url()" class="min-w-3xl object-cover" />
+      }
+    </div>
+  </div>
+</section>

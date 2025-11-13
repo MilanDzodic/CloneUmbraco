@@ -270,6 +270,14 @@
       },
       "items": [
         {
+          "label": "White",
+          "data": {
+            "tag": "span",
+            "class": "text-neutral"
+          },
+          "appearence": { "style": "background-color:#4F5955; color:#fff; padding:5px;" }
+        },
+        {
           "label": "Primary",
           "data": {
             "tag": "span",

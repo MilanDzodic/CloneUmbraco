@@ -1,0 +1,15 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockListItem>;
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+
+@{
+  var content = (ContentModels.ServiceDetailImage)Model.Content;
+}
+
+<section class="py-[5rem]">
+  <div class="max-w-7xl mx-auto px-4">
+        @if (content.Image != null)
+        {
+          <img src="@content.Image.Url()" class="object-cover" />
+        }
+  </div>
+</section>
